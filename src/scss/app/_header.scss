@@ -1,0 +1,100 @@
+header {
+
+    .navbar {
+        padding: 8px 0px;
+        background-color: #D8E6F3;
+
+        .navbar-brand {
+            padding: 0px;
+
+            .img-fluid {
+                max-height: 48px;        
+            }
+        }
+
+        .offcanvas {
+
+            .offcanvas-header {
+
+                .btn-close {
+                    padding: 0px;
+                    border: none;
+                    background-color: transparent;
+
+                    svg {
+                        width: 25px;
+                    }
+                }
+            }
+
+            .offcanvas-body {
+
+                .navbar-nav {
+                    width: 100%;
+                    justify-content: flex-end;
+
+                    .nav-item {
+                        margin-right: 32px;
+
+                        // Breakpoints
+                        @include respond-to($phone) {
+                            margin-right: 0px;
+                        }
+
+                        @include respond-to($phone-tablet) {
+                            margin-right: 0px;
+                        }
+
+                        @include respond-to($tablet-medium) {
+                            margin-right: 0px;
+                        }
+
+                        @include respond-to($medium-large) {
+                            margin-right: 0px;
+                        }
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+
+                        .nav-link {
+                            padding: 0px;
+                            line-height: 18px;
+                            font-size: 16px;
+                            color: #495867;
+
+                            // Breakpoints
+                            @include respond-to($phone) {
+                                margin-bottom: 20px;
+                                line-height: 20px;
+                                font-size: 18px;
+                            }
+
+                            @include respond-to($phone-tablet) {
+                                margin-bottom: 20px;
+                                line-height: 20px;
+                                font-size: 18px;
+                            }
+
+                            @include respond-to($tablet-medium) {
+                                margin-bottom: 20px;
+                                line-height: 20px;
+                                font-size: 18px;
+                            }
+
+                            @include respond-to($medium-large) {
+                                margin-bottom: 20px;
+                                line-height: 20px;
+                                font-size: 18px;
+                            }
+
+                            &:hover {
+                                text-decoration: underline !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+footer {
+    padding: 43px 0px;
+    background-image: url('../img/bg-footer.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: center center;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 30px 0px 15px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 30px 0px 15px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 30px 0px 15px 0px;
+    }
+
+    @include respond-to($medium-large) {
+        padding: 30px 0px 15px 0px;
+    }
+
+    .img-fluid {
+        max-height: 96px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 15px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 15px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 15px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .nav {
+
+        // Breakpoints
+        @include respond-to($phone) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include respond-to($phone-tablet) {
+            justify-content: center;
+        }
+
+        @include respond-to($tablet-medium) {
+            justify-content: center;
+        }
+
+        @include respond-to($medium-large) {
+            justify-content: center;
+        }
+
+        .nav-item {
+            margin-right: 32px;
+
+            // Breakpoints
+            @include respond-to($phone) {
+                margin-right: 0px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            @include respond-to($phone-tablet) {
+                margin-bottom: 15px;
+            }
+
+            @include respond-to($tablet-medium) {
+                margin-bottom: 15px;
+            }
+
+            @include respond-to($medium-large) {
+                margin-bottom: 15px;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            .nav-link {
+                padding: 0px;
+                line-height: 18px;
+                font-size: 16px;
+                color: #FCFCFD;
+
+                &:hover {
+                    text-decoration: underline !important;
+                }
+            }
+        }
+    }
+}
