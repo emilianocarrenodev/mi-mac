@@ -6,41 +6,22 @@
     // Breakpoints
     @include respond-to($phone) {
         margin-bottom: 0px;
-        padding: 40px 0px 60px 0px;
+        padding: 32px 0px 0px 0px;
     }
 
     @include respond-to($phone-tablet) {
         margin-bottom: 0px;
-        padding: 40px 0px 60px 0px;
+        padding: 32px 0px 0px 0px;
     }
 
     @include respond-to($tablet-medium) {
         margin-bottom: 0px;
-        padding: 40px 0px 60px 0px;
+        padding: 32px 0px 0px 0px;
     }
 
     @include respond-to($medium-large) {
         margin-bottom: 0px;
-        padding: 40px 0px 60px 0px;
-    }
-
-    h1 {
-
-        @include respond-to($phone) {
-            text-align: center;
-        }
-
-        @include respond-to($phone-tablet) {
-            text-align: center;
-        }
-
-        @include respond-to($tablet-medium) {
-            text-align: center;
-        }
-
-        @include respond-to($medium-large) {
-            text-align: center;
-        }
+        padding: 32px 0px 0px 0px;
     }
 
     small {
@@ -48,23 +29,6 @@
         line-height: 28px;
         font-size: 24px;
         color: $color-secondary;
-
-        // Breakpoints
-        @include respond-to($phone) {
-            text-align: center;
-        }
-
-        @include respond-to($phone-tablet) {
-            text-align: center;
-        }
-
-        @include respond-to($tablet-medium) {
-            text-align: center;
-        }
-
-        @include respond-to($medium-large) {
-            text-align: center;
-        }
     }
 
     .img-fluid {
@@ -72,23 +36,27 @@
 
         // Breakpoints
         @include respond-to($phone) {
-            max-height: 250px;
-            margin-bottom: 15px;
+            max-height: 310px;
+            margin-top: 32px;
+            margin-bottom: -70px;
         }
 
         @include respond-to($phone-tablet) {
-            max-height: 250px;
-            margin-bottom: 15px;
+            max-height: 310px;
+            margin-top: 32px;
+            margin-bottom: -70px;
         }
 
         @include respond-to($tablet-medium) {
-            max-height: 250px;
-            margin-bottom: 15px;
+            max-height: 310px;
+            margin-top: 32px;
+            margin-bottom: -70px;
         }
 
         @include respond-to($medium-large) {
-            max-height: 250px;
-            margin-bottom: 15px;
+            max-height: 310px;
+            margin-top: 32px;
+            margin-bottom: -70px;
         }
     }
 }

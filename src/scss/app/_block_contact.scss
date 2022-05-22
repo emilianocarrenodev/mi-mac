@@ -1,6 +1,23 @@
 .block-contact {
-    padding: 40px 0px;
+    padding: 38px 0px;
     background-color: $color-fourth;
+
+    // Breakpoints
+    @include respond-to($phone) {
+        padding: 25px 0px 70px 0px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding: 25px 0px 70px 0px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding: 25px 0px 70px 0px;
+    }
+
+    @include respond-to($medium-large) {
+        padding: 25px 0px 70px 0px;
+    }
 
     .container {
 
@@ -18,8 +35,48 @@
         }
     }
 
+    h2 {
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 40px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 40px;
+        }
+    }
+
     p {
         margin-bottom: 30px;
         text-align: justify;
+    }
+
+    .mb-3 {
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 24px !important;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 24px !important;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 24px !important;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 24px !important;
+        }
     }
 }

@@ -1,8 +1,45 @@
 .block-about-us {
     padding-bottom: 50px;
 
+    // Breakpoints
+    @include respond-to($phone) {
+        padding-bottom: 60px;
+    }
+
+    @include respond-to($phone-tablet) {
+        padding-bottom: 60px;
+    }
+
+    @include respond-to($tablet-medium) {
+        padding-bottom: 60px;
+    }
+
+    @include respond-to($medium-large) {
+        padding-bottom: 60px;
+    }
+
+    h2 {
+
+        // Breakpoints
+        @include respond-to($phone) {
+            margin-bottom: 32px;
+        }
+
+        @include respond-to($phone-tablet) {
+            margin-bottom: 32px;
+        }
+
+        @include respond-to($tablet-medium) {
+            margin-bottom: 32px;
+        }
+
+        @include respond-to($medium-large) {
+            margin-bottom: 32px;
+        }
+    }
+
     ul {
-        margin-bottom: 0px;
+        margin-bottom: 15px;
         padding-left: 16px;
 
         li {
@@ -26,23 +63,19 @@
 
         // Breakpoints
         @include respond-to($phone) {
-            height: 250px;
-            margin-bottom: 30px;
+            height: 228px;
         }
 
         @include respond-to($phone-tablet) {
-            height: 250px;
-            margin-bottom: 30px;
+            height: 228px;
         }
 
         @include respond-to($tablet-medium) {
-            height: 250px;
-            margin-bottom: 30px;
+            height: 228px;
         }
 
         @include respond-to($medium-large) {
-            height: 250px;
-            margin-bottom: 30px;
+            height: 228px;
         }
     }
 }
