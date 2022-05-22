@@ -2,9 +2,10 @@
 
 * {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
     font-style: normal;
-    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    font-size: 14px;
     box-shadow: none !important;
     outline: none !important;
 }
@@ -39,20 +40,29 @@ section {
 h1 {
     margin: 0px 0px 15px 0px;
     line-height: 55px;
+    font-weight: 400;
     font-size: 48px;
-    color: #FCFCFD;
+    color: $color-secondary;
+}
+
+h2 {
+    margin: 0px 0px 15px 0px;
+    line-height: 41px;
+    font-weight: 400;
+    font-size: 36px;
+    color: $color-primary;
 }
 
 /*Botones*/
 .btn-primary {
     padding: 12px 24px;
-    background-color: #495867;
-    border: 1px solid #495867 !important;
+    background-color: $color-primary;
+    border: 1px solid $color-primary !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     line-height: 16px;
     font-size: 14px;
-    color: #FCFCFD;
+    color: $color-secondary;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -61,37 +71,43 @@ h1 {
     &:active,
     &.active {
         background-color: transparent;
-        color: #495867;
+        color: $color-primary;
     }
 }
 
 /*Parrafos*/
 p {
-    margin-bottom: 0px;
+    margin-bottom: 16px;
     letter-spacing: 0;
-    line-height: 22px;
+    line-height: 24px;
     font-size: 16px;
-    color: $color-secondary;
+    color: $color-primary;
 
-    // Breakpoints
-    @include respond-to($phone) {
-        line-height: 20px;
-        font-size: 15px;
+    strong {
+        line-height: 24px;
+        font-weight: 700;
+        font-size: 16px;
+        color: $color-primary;
     }
 
-    @include respond-to($phone-tablet) {
-        line-height: 20px;
-        font-size: 15px;
+    i {
+        font-style: italic;
+        line-height: 24px;
+        font-weight: 400;
+        font-size: 16px;
+        color: $color-primary;
     }
 
-    @include respond-to($tablet-medium) {
-        line-height: 20px;
-        font-size: 15px;
-    }
+    a {
+        text-decoration: underline !important;
+        letter-spacing: 0;
+        line-height: 24px;
+        font-size: 16px;
+        color: $color-third;
 
-    @include respond-to($medium-large) {
-        line-height: 20px;
-        font-size: 15px;
+        &:hover {
+            color: $color-primary;
+        }
     }
 }
 

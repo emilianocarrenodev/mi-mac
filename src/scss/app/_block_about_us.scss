@@ -1,0 +1,48 @@
+.block-about-us {
+    padding-bottom: 50px;
+
+    ul {
+        margin-bottom: 0px;
+        padding-left: 16px;
+
+        li {
+            margin-bottom: 15px;
+            line-height: 24px;
+            font-size: 16px;
+            color: $color-primary;
+        }
+    }
+
+    .container-image {
+        width: 100%;
+        height: 330px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        background-position: center center;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        border-radius: 16px;
+
+        // Breakpoints
+        @include respond-to($phone) {
+            height: 250px;
+            margin-bottom: 30px;
+        }
+
+        @include respond-to($phone-tablet) {
+            height: 250px;
+            margin-bottom: 30px;
+        }
+
+        @include respond-to($tablet-medium) {
+            height: 250px;
+            margin-bottom: 30px;
+        }
+
+        @include respond-to($medium-large) {
+            height: 250px;
+            margin-bottom: 30px;
+        }
+    }
+}

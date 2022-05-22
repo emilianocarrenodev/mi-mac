@@ -1,7 +1,7 @@
 .block-banner {
     margin-bottom: 80px;
     padding-top: 20px;
-    background-color: #FE5F55;
+    background-color: $color-third;
 
     // Breakpoints
     @include respond-to($phone) {
@@ -47,7 +47,7 @@
         margin-bottom: 15px;
         line-height: 28px;
         font-size: 24px;
-        color: #FCFCFD;
+        color: $color-secondary;
 
         // Breakpoints
         @include respond-to($phone) {

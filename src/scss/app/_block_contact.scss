@@ -1,4 +1,25 @@
 .block-contact {
-    padding: 60px 0px;
-    background-color: #D8E6F3;
+    padding: 40px 0px;
+    background-color: $color-fourth;
+
+    .container {
+
+        // Breakpoints
+        @include respond-to($large-extra) {
+            max-width: 500px;
+        }
+
+        @include respond-to($extra-full) {
+            max-width: 500px;
+        }
+
+        @include respond-to($full) {
+            max-width: 500px;
+        }
+    }
+
+    p {
+        margin-bottom: 30px;
+        text-align: justify;
+    }
 }

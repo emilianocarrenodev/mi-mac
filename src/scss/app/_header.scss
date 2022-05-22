@@ -2,7 +2,7 @@ header {
 
     .navbar {
         padding: 8px 0px;
-        background-color: #D8E6F3;
+        background-color: $color-fourth;
 
         .navbar-brand {
             padding: 0px;
@@ -61,7 +61,7 @@ header {
                             padding: 0px;
                             line-height: 18px;
                             font-size: 16px;
-                            color: #495867;
+                            color: $color-primary;
 
                             // Breakpoints
                             @include respond-to($phone) {
