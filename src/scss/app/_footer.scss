@@ -67,7 +67,7 @@ footer {
             justify-content: center;
         }
 
-        .nav-item {
+        .menu-item {
             margin-right: 32px;
 
             // Breakpoints
@@ -99,7 +99,7 @@ footer {
                 margin-right: 0px;
             }
 
-            .nav-link {
+            a {
                 padding: 0px;
                 line-height: 18px;
                 font-size: 16px;
